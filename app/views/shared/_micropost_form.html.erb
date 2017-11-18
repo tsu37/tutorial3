@@ -1,8 +1,8 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-  <input type="date">
-  <input type="time">
+  <input type="date", class:"btn btn-primary" >
+  <input type="time", class:"btn btn-primary">
     <%= f.text_area :content, placeholder: "todoを入力してください。" %>
   </div>
   <%= f.submit "送信", class: "btn btn-primary" %>
